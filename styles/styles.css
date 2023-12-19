@@ -17,6 +17,11 @@
     --claret: #7D2636;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     background-color: rgb(114, 40, 40); /* Fondo del cuerpo de la página */
     color: #b9b3b3; /* Color del texto principal */
@@ -39,28 +44,31 @@ body {
 }
 
 .radio-day {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
-    background-color: #3498db;
+    background-color: var(--chocolate-cosmos);
     color: #fff;
     padding: 10px;
 }
 
 .radio-program {
-    border: 1px solid #ddd;
+    border: 2px solid var(--gunmetal);
     padding: 10px;
-    background-color: #fff;
-    text-align: left;
+    background-color: var(--silver);
+    text-align: center;
 }
 
 .radio-time {
     font-weight: bold;
+    font-size: 18px;
+    color: var(--english-violet);
 }
 
 .radio-details {
     margin-top: 5px;
-    color: #555;
+    color: var(--gunmetal);
+    font-size: 20px;
 }
 
 .radio-name {
@@ -205,6 +213,55 @@ body {
 }
 /* CIERRA Contenido Left Bar Index */
 
+/*SECCION CONTACTO*/
+.half-width-general {
+    width: 75%;
+    margin: 0 auto; /* Centrar el input */
+}
+
+.size-color {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 65%;
+    border: #0A2733 4px solid;
+    color: var(--gunmetal);
+    font-size: 20px;
+    background-color: var(--silver);
+}
+
+.ir-arriba {
+    text-align: center;
+    font-weight: bold;
+    padding: 3px;
+    font-size: 13px;
+    bottom: 10px;
+    right: 10px;
+    position:fixed;
+    cursor: pointer;
+    margin-bottom: 0.5cm;
+    margin-right: 0.5cm;
+    background-color: var(--gunmetal);
+    border-radius: 1cm;
+    border: 2px solid var(--silver);
+    width: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--silver);
+}
+
+.ir-arriba:hover {
+    background-color: var(--chocolate-cosmos);
+}
+
+.radio-rep {
+    display: flex;
+    justify-content: center;
+}
+
 /* Extra pequeño (xs) */
 @media (max-width: 575.98px) {
     /* Estilos específicos para pantallas extra pequeñas */
@@ -218,7 +275,7 @@ body {
     .h2-small-title {
         color: var(--silver);
         text-shadow: 4px 4px 4px rgb(208, 29, 29);
-        font-size: 15px;
+        font-size: 10px;
         text-align: center;
         margin-bottom: 1rem;
     }
@@ -249,6 +306,9 @@ body {
     }
     .copy {
         color: var(--silver);
+    }
+    .btn-mine {
+        font-size: 10px;
     }
 }
 
@@ -257,10 +317,13 @@ body {
     /* Estilos específicos para pantallas pequeñas */
     .h2-small-title {
         color: var(--silver);
-        font-size: 15px;
+        font-size: 12px;
         text-shadow: 4px 4px 4px rgb(208, 29, 29);
         text-align: center;
         margin-bottom: 1rem;
+        margin-top: -1.5rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
     .img-small{
         width: 70%;
@@ -289,6 +352,9 @@ body {
     }
     .copy {
         color: var(--silver);
+    }
+    .btn-mine {
+        font-size: 14px;
     }
 }
 
@@ -298,7 +364,7 @@ body {
     .h2-small-title {
         color:var(--silver);
         text-shadow: 4px 4px 4px rgb(208, 29, 29);
-        font-size: 19px;
+        font-size: 14px;
         text-align: center;
         margin-bottom: 1rem;
     }
@@ -464,3 +530,4 @@ body {
         height: 5rem;
     }
 }
+
