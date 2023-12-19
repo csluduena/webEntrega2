@@ -1,0 +1,466 @@
+@font-face {
+    font-family: "didactgothic-regular";
+    src: url('../fonts/didactgothic-regular.ttf format');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gunmetal: #0A2733;
+    --silver: #CACECA;
+    --chocolate-cosmos: #3E131B;
+    --english-violet: #533956;
+    --claret: #7D2636;
+}
+
+body {
+    background-color: rgb(114, 40, 40); /* Fondo del cuerpo de la página */
+    color: #b9b3b3; /* Color del texto principal */
+    min-height: 100vh; /* Establecer la altura mínima al 100% de la altura de la ventana (viewport height) */
+    margin: 0; /* Asegurarse de que no haya márgenes por defecto */
+    display: flex;
+    flex-direction: column;
+    font-family: "didactgothic-regular";
+}
+
+.radio-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.radio-day {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+}
+
+.radio-program {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.radio-time {
+    font-weight: bold;
+}
+
+.radio-details {
+    margin-top: 5px;
+    color: #555;
+}
+
+.radio-name {
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--silver);
+    background-color: var(--chocolate-cosmos);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+.nav-bar {
+    background-color: var(--chocolate-cosmos);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.ul-mine {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Cambiado de 'center' a 'space-around' para agregar espacio entre los elementos */
+    font-size: 15px;
+    padding: 0;
+    margin: 0; /* Añadido para asegurarse de que no haya margen en el elemento ul */
+}
+
+.btn-mine {
+    margin: 5px 2px; /* Añadido margen a cada lado del botón */
+    font-size: 19px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.btn-mine a {
+    text-decoration: none;
+    color: var(--silver);
+    padding: 5px;
+    border: var(--silver) 1px solid;
+    border-radius: 50px;
+}
+
+/* Opcional: puedes aplicar estilos específicos a los enlaces al pasar el ratón */
+.btn-mine a:hover {
+    color: var(--chocolate-cosmos);
+    background-color: var(--silver); /* Puedes ajustar este color según tus preferencias */
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    width: 100%;
+    height: auto;
+}
+
+.body-title, .text-radio {
+    color: var(--gunmetal);
+}
+
+.body-title {
+    font-size: 35px;
+    text-align: left;
+    margin: 2rem;
+}
+
+.text-radio {
+    font-size: 28px;
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.bar {
+    background-color: var(--gunmetal);
+}
+
+.center-body {
+    background-color: var(--silver);
+    min-height: 100vh;
+}
+
+.footer-content {
+    background-color: var(--chocolate-cosmos);
+}
+
+.copy {
+    color: var(--silver);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 20px;
+}
+
+/* INICIA Contenido Left Bar Index */
+.featured-content {
+    position: relative;
+    padding: 2rem;
+    color: var(--silver);
+}
+
+.h2-small-title {
+    color: var(--silver);
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.content-grid {
+    width: 100%;
+    gap: 20px;
+}
+
+.auto-position-y {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ajustar la altura al 100% de su contenedor */
+}
+
+.content-item {
+    text-align: center;
+}
+
+.h3-small-title {
+    padding-bottom: 1rem;
+}
+
+.small-text {
+    padding-bottom: 1rem;
+}
+
+.content-item img {
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+/* CIERRA Contenido Left Bar Index */
+
+/* Extra pequeño (xs) */
+@media (max-width: 575.98px) {
+    /* Estilos específicos para pantallas extra pequeñas */
+    .text-radio {
+        color: var(--gunmetal);
+        font-size: 18px;
+        text-align: center;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .h2-small-title {
+        color: var(--silver);
+        text-shadow: 4px 4px 4px rgb(208, 29, 29);
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .img-small{
+        width: 70%;
+        height: auto;
+        justify-content: center;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+    .h3-small-title {
+        padding-bottom: 0.2rem;
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+        font-size: 15px;
+    }
+    .small-text {
+        font-size: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 1rem;
+    }
+    .footer-content {
+        background-color: var(--chocolate-cosmos);
+        display:inherit;
+        height: 5rem;
+    }
+    .copy {
+        color: var(--silver);
+    }
+}
+
+/* Pequeño (sm) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Estilos específicos para pantallas pequeñas */
+    .h2-small-title {
+        color: var(--silver);
+        font-size: 15px;
+        text-shadow: 4px 4px 4px rgb(208, 29, 29);
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .img-small{
+        width: 70%;
+        height: auto;
+        justify-content: center;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+    .h3-small-title {
+        padding-bottom: 0.2rem;
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+        font-size: 15px;
+    }
+    .small-text {
+        font-size: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 1rem;
+    }
+    .footer-content {
+        background-color: var(--chocolate-cosmos);
+        display:inherit;
+        height: 5rem;
+    }
+    .copy {
+        color: var(--silver);
+    }
+}
+
+/* Mediano (md) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Estilos específicos para pantallas medianas */
+    .h2-small-title {
+        color:var(--silver);
+        text-shadow: 4px 4px 4px rgb(208, 29, 29);
+        font-size: 19px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .img-small{
+        width: 80%;
+        height: auto;
+        justify-content: center;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+    .h3-small-title {
+        padding-bottom: 0.2rem;
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+        font-size: 20px;
+    }
+    .small-text {
+        font-size: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 1rem;
+    }
+    .footer-content {
+        background-color: var(--chocolate-cosmos);
+        display:inherit;
+        height: 5rem;
+    }
+    .copy {
+        color: var(--silver);
+    }
+}
+
+/* Grande (lg) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Estilos específicos para pantallas grandes */
+    .h2-small-title {
+        color:var(--silver);
+        text-shadow: 4px 4px 4px rgb(208, 29, 29);
+        font-size: 19px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .img-small{
+        width: 85%;
+        height: auto;
+        justify-content: center;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+    .h3-small-title {
+        padding-bottom: 0.2rem;
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+        font-size: 20px;
+    }
+    .small-text {
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 1rem;
+    }
+    .footer-content {
+        background-color: var(--chocolate-cosmos);
+        display:inherit;
+        height: 5rem;
+        position:relative;
+    }
+    .copy {
+        color: var(--silver);
+    }
+}
+
+/* Extra grande (xl) */
+@media (min-width: 1200px) {
+    /* Estilos específicos para pantallas extra grandes */
+    .h2-small-title, .copy {
+        color: var(--silver);
+    }
+
+    .h2-small-title, .copy {
+        margin-bottom: 1rem;
+    }
+
+    .h2-small-title {
+        text-shadow: 4px 4px 4px rgb(208, 29, 29);
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .img-small{
+        width: 80%;
+        height: auto;
+        justify-content: center;
+        border-radius: 8px;
+    }
+
+    .h3-small-title {
+        padding-bottom: 0.2rem;
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+        font-size: 32px;
+    }
+
+    .small-text {
+        font-size: 26px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 1rem;
+    }
+
+    .footer-content {
+        background-color: var(--chocolate-cosmos);
+        display:inherit;
+        height: 5rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    /* Estilos específicos para pantallas extra grandes */
+    .h2-small-title, .copy {
+        color: var(--silver);
+    }
+
+    .h2-small-title, .img-small {
+        margin-bottom: 1rem;
+    }
+
+    .h2-small-title {
+        text-shadow: 4px 3px 4px rgb(208, 29, 29);
+        font-size: 50px;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .img-small{
+        width: 90%;
+        height: auto;
+        justify-content: center;
+        border-radius: 8px;
+    }
+
+    .h3-small-title {
+        padding-bottom: 0.2rem;
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+        font-size: 40px;
+    }
+
+    .small-text {
+        font-size: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 1rem;
+    }
+    
+    .footer-content {
+        background-color: var(--chocolate-cosmos);
+        display:inherit;
+        height: 5rem;
+    }
+}
