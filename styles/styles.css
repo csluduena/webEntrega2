@@ -25,19 +25,16 @@ img {
 .music-img {
     float: left;
     width: 30%;
+    margin-left: 3rem;
     height: auto;
-    align-items: center;
-    align-self: center;
-    rotate: 30deg;
+    transform: rotate(30deg)
 }
 
 .music-img2 {
     float: right;
     width: 30%;
     height: auto;
-    align-items: center;
-    align-self: center;
-    rotate: 30deg;
+    transform: rotate(30deg)
 }
 
 body {
@@ -149,11 +146,8 @@ body {
 .body-title {
     color: var(--gunmetal);
     font-weight: bolder;
-}
-
-.body-title {
-    font-size: 65px;
-    text-align: left;
+    font-size: 45px;
+    text-align: center;
     margin: 2rem;
 }
 
@@ -217,8 +211,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100%; /* Ajustar la altura al 100% de su contenedor */
+    height: 100%; 
 }
 
 .auto-position-x {
@@ -226,17 +219,26 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: top;
-    height: 100%; /* Ajustar la altura al 100% de su contenedor */
+    height: 100%; 
 }
 
 .monito-coder {
     text-align: center;
 }
 
+.my-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding-top: 6rem;
+}
+
 .radio-popup {
-    text-align: center;
-    margin-top: 8rem;
-    
+    border: 22px solid #ccc; /* Borde con color gris claro */
+    border-radius: 10px; /* Esquinas redondeadas */
+    overflow: hidden; /* Para que las esquinas redondeadas se apliquen correctamente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
 }
 
 .top-place1 {
@@ -316,8 +318,7 @@ a {
 }
 
 .radio-rep {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .set-text-perso {
@@ -356,6 +357,46 @@ a {
     cursor: pointer;
 }
 
+/* CONFGIG CAROUSEL */
+
+.title-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--gunmetal);
+    padding-top: 3rem;
+    padding-bottom:2rem;
+}
+
+.center-finger-icon {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transform: rotate(180deg);
+}
+
+.finger {
+    text-align: center;
+    justify-content: center;
+    padding-top:2rem;
+}
+
+.carousel-padre {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-right:8rem;
+    margin-left: 8rem;
+    margin-bottom: 8rem;;
+    color: var(--silver)
+}
+
+.config-carousel {
+    flex: 1;
+    color: var(--silver)
+}
+
 /* Extra pequeño (xs) */
 @media (max-width: 575.98px) {
     /* Estilos específicos para pantallas extra pequeñas */
@@ -385,7 +426,7 @@ a {
         max-width: 100%;
         height: auto;
         justify-content: center;
-        font-size: 15px;
+        font-size: 12px;
     }
     .small-text {
         font-size: 10px;
@@ -404,15 +445,19 @@ a {
     .btn-mine {
         font-size: 10px;
     }
-
     .featured-content {
         margin-bottom: 80rem;
     }
-
     .featured-content2 {
         margin-bottom: 20rem;
         margin-bottom: 0rem;
     }
+    /*SECCION CONTACTO*/
+    .half-width-general {
+    width: 100%;
+    margin: 0;
+    }
+    
 }
 
 /* Pequeño (sm) */
@@ -440,7 +485,7 @@ a {
         max-width: 100%;
         height: auto;
         justify-content: center;
-        font-size: 15px;
+        font-size: 11px;
     }
     .small-text {
         font-size: 10px;
@@ -459,11 +504,9 @@ a {
     .btn-mine {
         font-size: 14px;
     }
-
     .featured-content {
         margin-bottom: 80rem;
     }
-
     .featured-content2 {
         margin-bottom: 20rem;
         margin-bottom: 0rem;
@@ -508,11 +551,9 @@ a {
     .copy {
         color: var(--silver);
     }
-
     .featured-content {
         margin-bottom: 80rem;
     }
-
     .featured-content2 {
         margin-bottom: 20rem;
         margin-bottom: 0rem;
@@ -562,7 +603,6 @@ a {
     .featured-content {
         margin-bottom: 80rem;
     }
-
     .featured-content2 {
         margin-bottom: 20rem;
         margin-bottom: 0rem;
@@ -575,24 +615,20 @@ a {
     .h2-small-title, .copy {
         color: var(--silver);
     }
-
     .h2-small-title, .copy {
         margin-bottom: 1rem;
     }
-
     .h2-small-title {
         text-shadow: 4px 4px 4px rgb(208, 29, 29);
         text-align: center;
         margin: 1rem;
     }
-
     .img-small{
         width: 80%;
         height: auto;
         justify-content: center;
         border-radius: 8px;
     }
-
     .h3-small-title {
         padding-bottom: 0.2rem;
         max-width: 100%;
@@ -600,24 +636,20 @@ a {
         justify-content: center;
         font-size: 32px;
     }
-
     .small-text {
         font-size: 26px;
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 1rem;
     }
-
     .footer-content {
         background-color: var(--chocolate-cosmos);
         display:inherit;
         height: 5rem;
     }
-
     .featured-content {
         margin-bottom: 80rem;
     }
-
     .featured-content2 {
         margin-bottom: 20rem;
         margin-bottom: 0rem;
@@ -629,25 +661,21 @@ a {
     .h2-small-title, .copy {
         color: var(--silver);
     }
-
     .h2-small-title, .img-small {
         margin-bottom: 1rem;
     }
-
     .h2-small-title {
         text-shadow: 4px 3px 4px rgb(208, 29, 29);
         font-size: 50px;
         text-align: center;
         margin: 1rem;
     }
-
     .img-small{
         width: 90%;
         height: auto;
         justify-content: center;
         border-radius: 8px;
     }
-
     .h3-small-title {
         padding-bottom: 0.2rem;
         max-width: 100%;
@@ -655,27 +683,22 @@ a {
         justify-content: center;
         font-size: 40px;
     }
-
     .small-text {
         font-size: 30px;
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 1rem;
-    }
-    
+    }    
     .footer-content {
         background-color: var(--chocolate-cosmos);
         display:inherit;
         height: 5rem;
     }
-
     .featured-content {
         margin-bottom: 20rem;
     }
-
     .featured-content2 {
         margin-bottom: 20rem;
         margin-bottom: 0rem;
     }
 }
-
