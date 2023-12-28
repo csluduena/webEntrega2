@@ -334,9 +334,11 @@ a {
     text-align: center;
 }
 
-.set-text-perso {
-    font-weight: bolder;
+.set-text-perso{
     font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    color: var(--gunmetal);
 }
 
 .centrar-grid {
@@ -458,9 +460,35 @@ a {
         padding-bottom: 2rem;
         text-align: center;
     }
+    .set-text-perso{
+        font-size: 40px;
+        text-align: center;
+        color: var(--gunmetal);
+    }
+    .text-historia {
+        color: var(--gunmetal);
+        font-size: 15px;
+        text-align: center;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 }
 
 @media screen and (max-width: 972px) {
+    .set-text-perso {
+        font-size: 40px;
+        text-align: center;
+        color: var(--gunmetal);
+    }
+    .text-historia {
+        color: var(--gunmetal);
+        font-size: 15px;
+        text-align: center;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
     .img-small2 {
         width: 7rem;
     }
@@ -728,11 +756,10 @@ a {
         padding-bottom: 19px;
     }
     .btn-mine a {
-        font-family: Georgia, Times, “Times New Roman”, serif;
         text-decoration: none;
         color: var(--silver);
-        padding: 9px;
-        font-size: 14px;
+        padding: 4px;
+        font-size: 13px;
         font-weight: bolder;
         border: var(--silver) 1px solid;
         border-radius: 50px;
