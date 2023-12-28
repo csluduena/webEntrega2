@@ -838,7 +838,11 @@ a {
     }
     .btn-mine {
         margin: 0;
-        padding: 4px;
+        padding: 1px;
+    }
+    .btn-mine a {
+        font-size: 15px;
+        padding: 3px;
     }
     .content-item2 {
         display: none;
