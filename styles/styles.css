@@ -707,10 +707,19 @@ a {
         justify-content: center;
     }
     .ul-mine {
-        font-family: Tahoma;
         flex-direction: row;
         align-items: center;
         padding-bottom: 19px;
+    }
+    .btn-mine a {
+        font-family: Georgia, Times, “Times New Roman”, serif;
+        text-decoration: none;
+        color: var(--silver);
+        padding: 9px;
+        font-size: 14px;
+        font-weight: bolder;
+        border: var(--silver) 1px solid;
+        border-radius: 50px;
     }
     .btn-mine {
         margin: 0;
@@ -899,11 +908,16 @@ a {
     .carousel-item {
         width: 450px;
     }
-    .text-historia  {
+    .set-text-perso{
+        font-size: 40px;
+        text-align: center;
+        color: var(--gunmetal);
+    }
+    .text-historia {
         color: var(--gunmetal);
         font-size: 10px;
         text-align: center;
-        margin-top: 5rem;
+        margin-top: 2rem;
         margin-left: 1rem;
         margin-right: 1rem;
     }
